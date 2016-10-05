@@ -5,7 +5,7 @@
 ### Short Description
 An extensible, customizable, hookable multi gui class library for AutoHotKey v1.1.2+
 
-### GUI Example #1: Todo
+### GUI Example #1: See Arma 3 Macro Tools for GTA repo
 =======
 # P-Easy-Gui-for-AutoHotKey
 Easy to use gui library for autohotkey scripts
