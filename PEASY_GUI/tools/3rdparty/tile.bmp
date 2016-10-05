@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Page not found &laquo;  Maestrith.com</title>
+<link rel="apple-touch-icon" href="http://maestrith.com/wp-content/themes/mbius/icon-pda.png"/>
+<link rel="SHORTCUT ICON" href="http://maestrith.com/wp-content/themes/mbius/favicon.ico"/>
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://maestrith.com/wp-content/themes/mbius/favicon.ico" />
+<link rel="pingback" href="http://maestrith.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+	// <![CDATA[
+	if (screen.width > 640)
+	{
+		//desktop version
+		document.write('<link rel="stylesheet" href="http://maestrith.com/wp-content/themes/mbius/style.css" type="text/css" media="screen,tv,projection" />');
+		document.write('<link rel="stylesheet" href="http://maestrith.com/wp-content/themes/mbius/css/desktop-amethyst.css" type="text/css" title="skin" media="screen,tv,projection" />');
+		document.write('<!--[if lte IE 7]><link rel="stylesheet" href="http://maestrith.com/wp-content/themes/mbius/css/ie.css" type="text/css" media="screen" /><![endif]-->');
+
+	}
+	else
+	{
+		//mobile version
+		document.write('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />');
+	 	document.write('<link rel="stylesheet"  href="http://maestrith.com/?mobile=amethyst" type="text/css" media="all" />');		
+		
+				document.write('<style type="text/css"> div.sl { display: none !important; }</style>');		
+				
+
+	 	var ua = navigator.userAgent.toLowerCase();
+	 	if ((ua.indexOf('iemobile') != -1) || (ua.indexOf('msie') != -1))
+	 		document.write('<link rel="stylesheet" href="http://maestrith.com/wp-content/themes/mbius/css/ie-mobile.css" type="text/css" media="all" />');
+	 	else if (ua.indexOf('blackberry') != -1)
+	 		document.write('<link rel="stylesheet" href="http://maestrith.com/wp-content/themes/mbius/css/blackberry.css" type="text/css" media="all" />');
+	 	else if ((ua.indexOf('symbian') != -1) || (ua.indexOf('midp') != -1))
+	 		document.write('<link rel="stylesheet" href="http://maestrith.com/wp-content/themes/mbius/css/symbian.css" type="text/css" media="all" />');
+	}
+	// ]]>
+	</script>
+
+<link rel="alternate" type="application/rss+xml" title="Maestrith.com &raquo; Feed" href="http://maestrith.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Maestrith.com &raquo; Comments Feed" href="http://maestrith.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/maestrith.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='jetpack_css-css'  href='http://maestrith.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://maestrith.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://maestrith.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://maestrith.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://maestrith.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://maestrith.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.4" />
+<style type='text/css'>img#wpstats{display:none}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		        <script type="text/javascript">
+	// <![CDATA[
+	if (screen.width > 640)
+	{
+		//desktop version
+		document.write('<'+'script type="text/javascript" src="http://maestrith.com/wp-content/themes/mbius/js/jquery.checkbox.min.js"><'+'/script>');
+		document.write('<'+'script type="text/javascript" src="http://maestrith.com/wp-content/themes/mbius/js/jquery.stylish-select.min.js"><'+'/script>');
+		document.write('<'+'script type="text/javascript" src="http://maestrith.com/wp-content/themes/mbius/js/desktop.js"><'+'/script>');
+	}
+	else
+	{
+		//mobile version
+	 	document.write('<'+'script type="text/javascript" src="http://maestrith.com/wp-content/themes/mbius/js/jquery.galleryScroll.1.5.2.js"><'+'/script>');
+	 	document.write('<'+'script type="text/javascript" src="http://maestrith.com/wp-content/themes/mbius/js/mobile.js"><'+'/script>');
+	}
+	// ]]>
+	</script>
+</head>
+<body class="error404">
+
+<div id="wrapper">
+
+	<div id="middle">
+
+		<div id="container">
+			<div id="content">
+
+				<div id="header">
+					<h1><a href="http://maestrith.com">Maestrith.com</a></h1>
+					<strong>A place to store my scripts</strong>
+				</div>
+
+				<div id="icons">
+					<div class="transparency"></div>
+					<div class="items">
+						<a href="#skip-to-nav" class="skip-navigation">Skip To Navigation</a>
+																		
+
+					</div>
+
+				</div>
+
+				<div id="menu">
+					<div class="transparency"></div>
+						<div id="search-box">
+
+							<form action="http://maestrith.com/">
+								<fieldset>
+									<div><input type="text" name="s" value="Search..." /></div>
+								</fieldset>
+
+							</form>
+
+						</div>
+					<div class="items">
+					<ul id="nav-main">
+						<li class="page_item page-item-55"><a href="http://maestrith.com/donations/">Donations</a></li>
+<li class="page_item page-item-102"><a href="http://maestrith.com/download-ahk-studio/">Download AHK Studio</a></li>
+<li class="page_item page-item-5"><a href="http://maestrith.com/free-stuff/">Free Stuff</a></li>
+<li class="page_item page-item-98"><a href="http://maestrith.com/manual-studio-installation/">Manual Studio Installation</a></li>
+<li class="page_item page-item-2"><a href="http://maestrith.com/">Welcome to Maestrith.com</a></li>
+					</ul>
+						<a href="javascript:void(null)" class="show-search"></a>
+					</div>
+                                </div>
+				<div class="clear"></div>
+				<div>
+					<div class="post">
+						<div class="transparency"></div>
+						<div class="postdata">
+							<div class="post-header">
+
+								<h2>Error 404 - Not Found</h2>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<a name="skip-to-nav"></a>
+
+				<div id="mobile-navigation">
+				<ul>
+					<li class="page_item page-item-55"><a href="http://maestrith.com/donations/">Donations</a></li>
+<li class="page_item page-item-102"><a href="http://maestrith.com/download-ahk-studio/">Download AHK Studio</a></li>
+<li class="page_item page-item-5"><a href="http://maestrith.com/free-stuff/">Free Stuff</a></li>
+<li class="page_item page-item-98"><a href="http://maestrith.com/manual-studio-installation/">Manual Studio Installation</a></li>
+<li class="page_item page-item-2"><a href="http://maestrith.com/">Welcome to Maestrith.com</a></li>
+				</ul>
+				<div class="mobile-search">
+
+					<form action="http://maestrith.com/">
+						<fieldset>
+							<div><input type="submit" value="" class="submit" /> <input type="text" name="s" value="SEARCH" /> </div>
+						</fieldset>
+					</form>
+				</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="sidebar sl">
+		
+			<div id="search-2" class="part widget widget_search"><div class="sm-slide-block inactive"><div class="sm-title"><h4>Search</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a>					</div>
+					<div class="sm-block">
+						<div><form method="get" action="http://maestrith.com/" >
+	<fieldset>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" class="submit" id="searchsubmit" value="Search" />
+	</fieldset>
+	</form></div></div></div><div class="clear"></div></div>		<div id="recent-posts-2" class="part widget widget_recent_entries"><div class="sm-slide-block inactive">		<div class="sm-title"><h4>Recent Posts</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div><div class="sm-block"><div>		<ul>
+					<li>
+				<a href="http://maestrith.com/i-have-no-idea-what-i-am-doing/">I have no idea what I am doing</a>
+						</li>
+				</ul>
+		</div></div></div><div class="clear"></div></div>		<div id="recent-comments-2" class="part widget widget_recent_comments"><div class="sm-slide-block inactive"><div class="sm-title"><h4>Recent Comments</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div><div class="sm-block"><div><ul id="recentcomments"></ul></div></div></div><div class="clear"></div></div><div id="archives-2" class="part widget widget_archive"><div class="sm-slide-block inactive"><div class="sm-title"><h4>Archives</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div><div class="sm-block"><div>		<ul>
+			<li><a href='http://maestrith.com/2016/07/'>July 2016</a></li>
+		</ul>
+		</div></div></div><div class="clear"></div></div><div id="categories-2" class="part widget widget_categories"><div class="sm-slide-block inactive"><div class="sm-title"><h4>Categories</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div><div class="sm-block"><div>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://maestrith.com/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</div></div></div><div class="clear"></div></div><div id="meta-2" class="part widget widget_meta"><div class="sm-slide-block inactive"><div class="sm-title"><h4>Meta</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div><div class="sm-block"><div>			<ul>
+						<li><a href="http://maestrith.com/wp-login.php">Log in</a></li>
+			<li><a href="http://maestrith.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://maestrith.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</div></div></div><div class="clear"></div></div><div id="text-2" class="part widget widget_text"><div class="sm-slide-block inactive"><div class="sm-title"><h4>Web Hosting</h4><a href="javascript:void(null)" class="sm-open-close">Close block</a></div><div class="sm-block"><div>			<div class="textwidget"><a href='http://fhost.com.au' title='fHost.com.au Best value cPanel Website Hosting' target='_blank'><img  src='https://pbs.twimg.com/profile_images/2909867222/b482ff2bd9ccb5a4eb1ae13f166c182d.jpeg' width='100' height='100'</a><a href='http://fhost.com.au' title='fHost.com.au Best value cPanel Website Hosting' target='_blank'></a></div>
+		</div></div></div><div class="clear"></div></div>
+		</div>
+		
+		</div>
+
+	</div>
+	<div id="footer">
+	<div>
+	<center>
+	<a href='http://fhost.com.au' title='fHost.com.au Best value cPanel Website Hosting' target='_blank'>Website Hosting by fHost.com.au</a>
+	</center>
+	</div>
+		<strong class="mobile-optimized" title="This page is optimized for mobile phones">Optimized for mobile devices</strong>
+		<p>Powered by <a href="http://wordpress.org" title="WordPress.org">WordPress</a></p>
+		<p><em>Design &amp; development by</em> <a id="mobilizetoday" href="http://www.mobilizetoday.com">MobilizeToday.com</a></p>
+	</div>
+	</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-24929168-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201637'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Sepaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://maestrith.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.5.4'></script>
+<script type='text/javascript' src='http://maestrith.com/wp-includes/js/wp-embed.min.js?ver=4.5.4'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201637.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.1.1',blog:'23005761',post:'0',tz:'0',srv:'maestrith.com'} ]);
+	_stq.push([ 'clickTrackerInit', '23005761', '0' ]);
+</script>
+	<script type="text/javascript">
+		var path = "http://maestrith.com";
+	</script>
+</body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-24929168-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	<div style="display:none">
+	</div>
+	<script type="text/javascript">
+		var path = "http://maestrith.com";
+	</script>
+</body>
+</html>

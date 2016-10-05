@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<settings>
+	<actions>
+		<hotkey label="modesel" main="LButton Mode Change">
+			<key desc="Next Mode" value="+up"></key>
+			<key desc="Previous Mode" value="+down"></key></hotkey>
+		<hotkey label="adjust" main="Adjust Selected Controls Position">
+			<key desc="Up" value="Up"></key>
+			<key desc="Down" value="Down"></key>
+			<key desc="Left" value="Left"></key>
+			<key desc="Right" value="Right"></key></hotkey>
+		<hotkey label="allkeys" main="Hotkeys">
+			<key desc="Copy GUI to Clipboard" value="^E"></key>
+			<key desc="Export GUI" value="!E"></key>
+			<key desc="Show Code" value="S"></key>
+			<key desc="Reorder GUI" value="!R"></key>
+			<key desc="Test GUI" value="^T"></key>
+			<key desc="Edit Labels" value="F1"></key></hotkey>
+	</actions>
+	<window>
+		<position win="2">x87 y586 w320 h666</position>
+		<position win="1">x950 y348 w420 h151</position>
+		<position win="44">x143 y1020 w245 h22</position>
+	</window>
+	<last file="E:\dev\git\sf\PEASY_GUI\PEASY_GUI\tools\guis\DevGui.xml"></last>
+	<options>
+		<Grid>0</Grid>
+		<Snap_To_Grid>1</Snap_To_Grid>
+		<Borders>0</Borders>
+	</options>
+</settings>

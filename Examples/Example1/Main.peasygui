@@ -1,0 +1,640 @@
+﻿#Include %A_ScriptDir%\..\PEASY_GUI
+#Include base\PEASY_GUI_Base.ahk
+#Include ctypes\PEASY_GUI_CEDIT.ahk
+#Include ctypes\PEASY_GUI_CDROPDOWN.ahk
+#Include ctypes\PEASY_GUI_CBUTTON.ahk
+#Include ctypes\PEASY_GUI_CCHECKBOX.ahk
+#Include ctypes\PEASY_GUI_CLABEL.ahk
+#Include ctypes\PEASY_GUI_CGROUP.ahk
+#Include ctypes\PEASY_GUI_CPROGRESS.ahk
+#Include %A_ScriptDir%
+
+Class PEASY_GUI_GTAMACWINDOW extends PEASY_GUI_BASE {
+	__Title := "GTA Macro Tools Alpha"
+	__Width := 620
+	__Height := 691
+	__GuiWindowOptions := "Center"
+	__GuiWindowCreationOptions := "+AlwaysOnTop +Border"
+
+	_ConstructWindow() {
+
+		local gui_btnStartGather
+			,gui_chkAlwaysOnTop
+			,gui_chkAlwaysOnTopText
+			,gui_ddlPresets
+			,gui_ddlPresetsOptions
+			,gui_btnPresetNew
+			,gui_btnPresetSave
+			,gui_btnPresetDelete
+			,gui_btnReset
+			,gui_btnAutoJoin
+			,gui_btnStartProcess
+			,gui_grpResourceDetails
+			,gui_txtResourceWeightProcessed
+			,gui_lblResourceWeightProcessed
+			,gui_btnResourceSave
+			,gui_ddlResourceDetails
+			,gui_ddlResourceDetailsOptions
+			,gui_txtResourceName
+			,gui_btnResourceDelete
+			,gui_lblResourceWeightUnprocessed
+			,gui_lblResourceName
+			,gui_lblResourceWeight
+			,gui_txtResourceWeightUnprocessed
+			,gui_grpResourceGatherDetails
+			,gui_txtQuantityGather
+			,gui_txtBaseSpeedGathering
+			,gui_lblBaseSpeedGather
+			,gui_lblQuantityPerGather
+			,gui_grpResourceProcessDetails
+			,gui_lblBaseSpeedProcess
+			,gui_txtBaseSpeedProcessing
+			,gui_grpPlayerDetails
+			,gui_ddlPlayerDetails
+			,gui_ddlPlayerDetailsOptions
+			,gui_ddlBuffProcessIllegal
+			,gui_ddlBuffProcessIllegalOptions
+			,gui_txtPlayerName
+			,gui_lblBuffGatherIllegal
+			,gui_ddlBuffGatherIllegal
+			,gui_ddlBuffGatherIllegalOptions
+			,gui_lblBuffProcessLegal
+			,gui_btnPlayerSave
+			,gui_btnPlayerDelete
+			,gui_lblPlayerName
+			,gui_ddlBuffProcessLegal
+			,gui_ddlBuffProcessLegalOptions
+			,gui_lblBuffProcessIllegal
+			,gui_ddlBuffGatherLegal
+			,gui_ddlBuffGatherLegalOptions
+			,gui_lblBuffGatherLegal
+			,gui_grpInventoryCapacities
+			,gui_txtCapacityVehicle
+			,gui_txtCapacityPlayer
+			,gui_lblCapacityVehicle
+			,gui_lblCapacityPlayer
+			,gui_grpGlobalSettings
+			,gui_lblGatherStartDelay
+			,gui_txtVirtualInventoryDelay
+			,gui_txtGatherStartDelay
+			,gui_lblVirtualInventoryDelay
+			,gui_chkGatherForever
+			,gui_chkGatherForeverText
+			,gui_txtDepressDelay
+			,gui_lblDepressDuration
+			,gui_ddlGameResolution
+			,gui_ddlGameResolutionOptions
+			,gui_lblResolution
+			,gui_lblUISize
+			,gui_ddlGameUISize
+			,gui_ddlGameUISizeOptions
+			,gui_btnPause
+			,gui_lblWinTitle
+			,gui_btnShowProgress
+			,gui_btnSellToTrader
+			,gui_btnAutoJoinStop
+
+		; Default Values: 
+		gui_btnAutoJoinStop := "Stop Auto-Join"
+		gui_btnSellToTrader := "SELL TO TRADER"
+		gui_btnShowProgress := "Show Progress"
+		gui_lblWinTitle := "Grand Theft Arma  Macro Tools"
+		gui_btnPause := "Pause"
+		gui_ddlGameUISize := 2
+		gui_ddlGameUISizeOptions := "Very Small|Small|Normal|Large|Very Large"
+		gui_lblUISize := "Game UI Size"
+		gui_lblResolution := "Game Resolution"
+		gui_ddlGameResolution := 
+		gui_ddlGameResolutionOptions := "1024x768|1280x1024|1680x1050|1920x1080|2560x1440"
+		gui_lblDepressDuration := "Depress Delay"
+		gui_txtDepressDelay := "200"
+		gui_chkGatherForever := 0
+		gui_chkGatherForeverText := "Gather Forever"
+		gui_lblVirtualInventoryDelay := "Virtual Inv Delay"
+		gui_txtGatherStartDelay := "500"
+		gui_txtVirtualInventoryDelay := "200"
+		gui_lblGatherStartDelay := "Gather Start Delay"
+		gui_grpGlobalSettings := "Global Settings and Configuration"
+		gui_lblCapacityPlayer := "Player"
+		gui_lblCapacityVehicle := "Vehicle"
+		gui_txtCapacityPlayer := "20"
+		gui_txtCapacityVehicle := "0"
+		gui_grpInventoryCapacities := "Inventory Capacities"
+		gui_lblBuffGatherLegal := "Gather Buff (Legal)"
+		gui_ddlBuffGatherLegal := 1
+		gui_ddlBuffGatherLegalOptions := "No Gather|Gather +1|Gather +2|Gather +3"
+		gui_lblBuffProcessIllegal := "Process Buff (Illegal)"
+		gui_ddlBuffProcessLegal := 1
+		gui_ddlBuffProcessLegalOptions := "No Process|Process +1|Process +2|Process +3"
+		gui_lblPlayerName := "Player Name"
+		gui_btnPlayerDelete := "Delete Player"
+		gui_btnPlayerSave := "Save Player"
+		gui_lblBuffProcessLegal := "Process Buff (Legal)"
+		gui_ddlBuffGatherIllegal := 1
+		gui_ddlBuffGatherIllegalOptions := "No Gather|Gather +1|Gather +2|Gather +3"
+		gui_lblBuffGatherIllegal := "Gather Buff (Illegal)"
+		gui_txtPlayerName := "Player Name"
+		gui_ddlBuffProcessIllegal := 1
+		gui_ddlBuffProcessIllegalOptions := "No Process|Process +1|Process +2|Process +3"
+		gui_ddlPlayerDetails := 1
+		gui_ddlPlayerDetailsOptions := ""
+		gui_grpPlayerDetails := "Player Details"
+		gui_txtBaseSpeedProcessing := "10000"
+		gui_lblBaseSpeedProcess := "Base Speed"
+		gui_grpResourceProcessDetails := "Processing Settings"
+		gui_lblQuantityPerGather := "Quantity per Gather"
+		gui_lblBaseSpeedGather := "Base Speed"
+		gui_txtBaseSpeedGathering := "7000"
+		gui_txtQuantityGather := "2"
+		gui_grpResourceGatherDetails := "Gathering Settings"
+		gui_txtResourceWeightUnprocessed := "4"
+		gui_lblResourceWeight := "Resource Weight"
+		gui_lblResourceName := "Resource Name"
+		gui_lblResourceWeightUnprocessed := "Unprocessed"
+		gui_btnResourceDelete := "Delete Resource"
+		gui_txtResourceName := "Resource Name"
+		gui_ddlResourceDetails := 1
+		gui_ddlResourceDetailsOptions := ""
+		gui_btnResourceSave := "Save Resource"
+		gui_lblResourceWeightProcessed := "Processed"
+		gui_txtResourceWeightProcessed := "2"
+		gui_grpResourceDetails := "Resource Details"
+		gui_btnStartProcess := "Start Processing"
+		gui_btnAutoJoin := "Auto-Join Spam"
+		gui_btnReset := "Reset"
+		gui_btnPresetDelete := "Delete Preset"
+		gui_btnPresetSave := "Save Preset"
+		gui_btnPresetNew := "New Preset"
+		gui_ddlPresets := 1
+		gui_ddlPresetsOptions := ""
+		gui_chkAlwaysOnTop := 0
+		gui_chkAlwaysOnTopText := "Always On Top"
+		gui_btnStartGather := "Start Gathering"
+
+
+		this.__GuiControls["btnStartGather"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnStartGather"
+		, "__GUI_OnChange_Handler"
+		, [" x140 y550 w150 h22 c0x29A600"]
+		, "Start Gathering")
+
+		this.__GuiControls["chkAlwaysOnTop"] := new PEASY_GUI_CCheckBox(this.__Handle
+		, &this
+		,"chkAlwaysOnTop"
+		, "__GUI_OnChange_Handler"
+		, [" x510 y70 w100 h14"]
+		, "Always On Top"
+		, gui_chkAlwaysOnTop)
+
+		this.__GuiControls["ddlPresets"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlPresets"
+		, "__GUI_OnChange_Handler"
+		, [" x30 y70 w120 AltSubmit "]
+		, gui_ddlPresets
+		, gui_ddlPresetsOptions)
+
+		this.__GuiControls["btnPresetNew"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnPresetNew"
+		, "__GUI_OnChange_Handler"
+		, [" x170 y70 w80 h23"]
+		, "New Preset")
+
+		this.__GuiControls["btnPresetSave"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnPresetSave"
+		, "__GUI_OnChange_Handler"
+		, [" x260 y70 w80 h23 c0x0"]
+		, "Save Preset")
+
+		this.__GuiControls["btnPresetDelete"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnPresetDelete"
+		, "__GUI_OnChange_Handler"
+		, [" x350 y70 w80 h23"]
+		, "Delete Preset")
+
+		this.__GuiControls["btnReset"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnReset"
+		, "__GUI_OnChange_Handler"
+		, [" x140 y610 w340 h22 c0x970000"]
+		, "Reset")
+
+		this.__GuiControls["btnAutoJoin"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnAutoJoin"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y550 w100 h33"]
+		, "Auto-Join Spam")
+
+		this.__GuiControls["btnStartProcess"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnStartProcess"
+		, "__GUI_OnChange_Handler"
+		, [" x330 y550 w150 h22"]
+		, "Start Processing")
+
+		this.__GuiControls["grpResourceDetails"] := new PEASY_GUI_CGroup(this.__Handle
+		, &this
+		,"grpResourceDetails"
+		, "__GUI_OnChange_Handler"
+		, [" x320 y100 w280 h339"]
+		, "Resource Details")
+
+		this.__GuiControls["txtResourceWeightProcessed"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtResourceWeightProcessed"
+		, "__GUI_OnChange_Handler"
+		, [" x430 y240 w20 h21 Limit Number "]
+		, "2")
+
+		this.__GuiControls["lblResourceWeightProcessed"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblResourceWeightProcessed"
+		, "__GUI_OnChange_Handler"
+		, [" x350 y240 w70 h13"]
+		, "Processed")
+
+		this.__GuiControls["btnResourceSave"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnResourceSave"
+		, "__GUI_OnChange_Handler"
+		, [" x480 y110 w100 h23"]
+		, "Save Resource")
+
+		this.__GuiControls["ddlResourceDetails"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlResourceDetails"
+		, "__GUI_OnChange_Handler"
+		, [" x460 y140 w120 AltSubmit "]
+		, gui_ddlResourceDetails
+		, gui_ddlResourceDetailsOptions)
+
+		this.__GuiControls["txtResourceName"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtResourceName"
+		, "__GUI_OnChange_Handler"
+		, [" x340 y190 w120 h21 Limit "]
+		, "Resource Name")
+
+		this.__GuiControls["btnResourceDelete"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnResourceDelete"
+		, "__GUI_OnChange_Handler"
+		, [" x340 y120 w100 h43"]
+		, "Delete Resource")
+
+		this.__GuiControls["lblResourceWeightUnprocessed"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblResourceWeightUnprocessed"
+		, "__GUI_OnChange_Handler"
+		, [" x480 y240 w70 h13"]
+		, "Unprocessed")
+
+		this.__GuiControls["lblResourceName"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblResourceName"
+		, "__GUI_OnChange_Handler"
+		, [" x340 y170 w240 h13"]
+		, "Resource Name")
+
+		this.__GuiControls["lblResourceWeight"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblResourceWeight"
+		, "__GUI_OnChange_Handler"
+		, [" x340 y220 w240 h13"]
+		, "Resource Weight")
+
+		this.__GuiControls["txtResourceWeightUnprocessed"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtResourceWeightUnprocessed"
+		, "__GUI_OnChange_Handler"
+		, [" x560 y240 w20 h21 Number Limit "]
+		, "4")
+
+		this.__GuiControls["grpResourceGatherDetails"] := new PEASY_GUI_CGroup(this.__Handle
+		, &this
+		,"grpResourceGatherDetails"
+		, "__GUI_OnChange_Handler"
+		, [" x340 y270 w240 h89"]
+		, "Gathering Settings")
+
+		this.__GuiControls["txtQuantityGather"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtQuantityGather"
+		, "__GUI_OnChange_Handler"
+		, [" x480 y320 w50 h21 Number Limit "]
+		, "2")
+
+		this.__GuiControls["txtBaseSpeedGathering"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtBaseSpeedGathering"
+		, "__GUI_OnChange_Handler"
+		, [" x480 y290 w50 h21 Number Limit "]
+		, "7000")
+
+		this.__GuiControls["lblBaseSpeedGather"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblBaseSpeedGather"
+		, "__GUI_OnChange_Handler"
+		, [" x360 y290 w70 h13"]
+		, "Base Speed")
+
+		this.__GuiControls["lblQuantityPerGather"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblQuantityPerGather"
+		, "__GUI_OnChange_Handler"
+		, [" x360 y320 w100 h13"]
+		, "Quantity per Gather")
+
+		this.__GuiControls["grpResourceProcessDetails"] := new PEASY_GUI_CGroup(this.__Handle
+		, &this
+		,"grpResourceProcessDetails"
+		, "__GUI_OnChange_Handler"
+		, [" x340 y370 w240 h59"]
+		, "Processing Settings")
+
+		this.__GuiControls["lblBaseSpeedProcess"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblBaseSpeedProcess"
+		, "__GUI_OnChange_Handler"
+		, [" x360 y390 w70 h13"]
+		, "Base Speed")
+
+		this.__GuiControls["txtBaseSpeedProcessing"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtBaseSpeedProcessing"
+		, "__GUI_OnChange_Handler"
+		, [" x480 y390 w50 h21 Number Limit "]
+		, "10000")
+
+		this.__GuiControls["grpPlayerDetails"] := new PEASY_GUI_CGroup(this.__Handle
+		, &this
+		,"grpPlayerDetails"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y170 w280 h269"]
+		, "Player Details")
+
+		this.__GuiControls["ddlPlayerDetails"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlPlayerDetails"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y210 w120 AltSubmit "]
+		, gui_ddlPlayerDetails
+		, gui_ddlPlayerDetailsOptions)
+
+		this.__GuiControls["ddlBuffProcessIllegal"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlBuffProcessIllegal"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y400 w120 Limit  AltSubmit "]
+		, gui_ddlBuffProcessIllegal
+		, gui_ddlBuffProcessIllegalOptions)
+
+		this.__GuiControls["txtPlayerName"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtPlayerName"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y240 w120 h21 Limit "]
+		, "Player Name")
+
+		this.__GuiControls["lblBuffGatherIllegal"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblBuffGatherIllegal"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y320 w110 h13"]
+		, "Gather Buff (Illegal)")
+
+		Gui,Font,Normal ,gui_PlayerGatherBuffIllegal 
+		this.__GuiControls["ddlBuffGatherIllegal"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlBuffGatherIllegal"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y320 w120 Limit  AltSubmit "]
+		, gui_ddlBuffGatherIllegal
+		, gui_ddlBuffGatherIllegalOptions)
+		Gui,Font
+
+		this.__GuiControls["lblBuffProcessLegal"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblBuffProcessLegal"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y360 w110 h13"]
+		, "Process Buff (Legal)")
+
+		this.__GuiControls["btnPlayerSave"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnPlayerSave"
+		, "__GUI_OnChange_Handler"
+		, [" x180 y180 w100 h23"]
+		, "Save Player")
+
+		this.__GuiControls["btnPlayerDelete"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnPlayerDelete"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y190 w100 h43"]
+		, "Delete Player")
+
+		this.__GuiControls["lblPlayerName"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblPlayerName"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y240 w110 h13"]
+		, "Player Name")
+
+		this.__GuiControls["ddlBuffProcessLegal"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlBuffProcessLegal"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y360 w120 Limit  AltSubmit "]
+		, gui_ddlBuffProcessLegal
+		, gui_ddlBuffProcessLegalOptions)
+
+		this.__GuiControls["lblBuffProcessIllegal"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblBuffProcessIllegal"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y400 w110 h13"]
+		, "Process Buff (Illegal)")
+
+		this.__GuiControls["ddlBuffGatherLegal"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlBuffGatherLegal"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y280 w120 Limit  AltSubmit "]
+		, gui_ddlBuffGatherLegal
+		, gui_ddlBuffGatherLegalOptions)
+
+		this.__GuiControls["lblBuffGatherLegal"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblBuffGatherLegal"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y280 w110 h13"]
+		, "Gather Buff (Legal)")
+
+		this.__GuiControls["grpInventoryCapacities"] := new PEASY_GUI_CGroup(this.__Handle
+		, &this
+		,"grpInventoryCapacities"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y100 w280 h59"]
+		, "Inventory Capacities")
+
+		this.__GuiControls["txtCapacityVehicle"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtCapacityVehicle"
+		, "__GUI_OnChange_Handler"
+		, [" x100 y130 w30 h21 Number Limit "]
+		, "0")
+
+		this.__GuiControls["txtCapacityPlayer"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtCapacityPlayer"
+		, "__GUI_OnChange_Handler"
+		, [" x240 y130 w30 h21 Number Limit "]
+		, "20")
+
+		this.__GuiControls["lblCapacityVehicle"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblCapacityVehicle"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y130 w50 h13"]
+		, "Vehicle")
+
+		this.__GuiControls["lblCapacityPlayer"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblCapacityPlayer"
+		, "__GUI_OnChange_Handler"
+		, [" x180 y130 w50 h13"]
+		, "Player")
+
+		this.__GuiControls["grpGlobalSettings"] := new PEASY_GUI_CGroup(this.__Handle
+		, &this
+		,"grpGlobalSettings"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y450 w580 h89"]
+		, "Global Settings and Configuration")
+
+		this.__GuiControls["lblGatherStartDelay"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblGatherStartDelay"
+		, "__GUI_OnChange_Handler"
+		, [" x200 y480 w90 h13"]
+		, "Gather Start Delay")
+
+		this.__GuiControls["txtVirtualInventoryDelay"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtVirtualInventoryDelay"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y510 w30 h21 Number "]
+		, "200")
+
+		this.__GuiControls["txtGatherStartDelay"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtGatherStartDelay"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y480 w40 h21 Number "]
+		, "500")
+
+		this.__GuiControls["lblVirtualInventoryDelay"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblVirtualInventoryDelay"
+		, "__GUI_OnChange_Handler"
+		, [" x70 y510 w80 h13"]
+		, "Virtual Inv Delay")
+
+		this.__GuiControls["chkGatherForever"] := new PEASY_GUI_CCheckBox(this.__Handle
+		, &this
+		,"chkGatherForever"
+		, "__GUI_OnChange_Handler"
+		, [" x40 y480 w90 h13"]
+		, "Gather Forever"
+		, gui_chkGatherForever)
+
+		this.__GuiControls["txtDepressDelay"] := new PEASY_GUI_CEdit(this.__Handle
+		, &this
+		,"txtDepressDelay"
+		, "__GUI_OnChange_Handler"
+		, [" x160 y510 w40 h21 Number "]
+		, "200")
+
+		this.__GuiControls["lblDepressDuration"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblDepressDuration"
+		, "__GUI_OnChange_Handler"
+		, [" x200 y510 w111 h13"]
+		, "Depress Delay")
+
+		this.__GuiControls["ddlGameResolution"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlGameResolution"
+		, "__GUI_OnChange_Handler"
+		, [" x460 y480 w120 AltSubmit "]
+		, gui_ddlGameResolution
+		, gui_ddlGameResolutionOptions)
+
+		this.__GuiControls["lblResolution"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblResolution"
+		, "__GUI_OnChange_Handler"
+		, [" x370 y480 w81 h23"]
+		, "Game Resolution")
+
+		this.__GuiControls["lblUISize"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblUISize"
+		, "__GUI_OnChange_Handler"
+		, [" x370 y510 w81 h13"]
+		, "Game UI Size")
+
+		this.__GuiControls["ddlGameUISize"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlGameUISize"
+		, "__GUI_OnChange_Handler"
+		, [" x460 y510 w120 AltSubmit "]
+		, gui_ddlGameUISize
+		, gui_ddlGameUISizeOptions)
+
+		this.__GuiControls["btnPause"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnPause"
+		, "__GUI_OnChange_Handler"
+		, [" x140 y580 w340 h22"]
+		, "Pause")
+
+		Gui,Font,Normal s24 c0x5B0000 1 0 0 0 ,Microsoft Sans Serif 
+		this.__GuiControls["lblWinTitle"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblWinTitle"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y10 w591 h53 -Wrap Center "]
+		, "Grand Theft Arma  Macro Tools")
+		Gui,Font
+
+		this.__GuiControls["btnShowProgress"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnShowProgress"
+		, "__GUI_OnChange_Handler"
+		, [" x500 y550 w103 h83"]
+		, "Show Progress")
+
+		this.__GuiControls["btnSellToTrader"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnSellToTrader"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y650 w583 h33"]
+		, "SELL TO TRADER")
+
+		this.__GuiControls["btnAutoJoinStop"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnAutoJoinStop"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y600 w100 h33"]
+		, "Stop Auto-Join")
+
+
+		return
+	}}
