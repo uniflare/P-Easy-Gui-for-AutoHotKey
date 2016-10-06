@@ -3,7 +3,7 @@
 
 ![P*** Easy Gui Tools](http://oi65.tinypic.com/rcnj3q.jpg)
 ### Short Description
-An extensible, customizable, hookable multi gui class library for AutoHotKey v1.1.2+
+###### An extensible, customizable, hookable multi gui class library for AutoHotKey v1.1.2+
 
 ### GUI Example #1: 
 ###### Very simple demonstration of hooking gui controls and getting gui control values.
