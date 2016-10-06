@@ -9,4 +9,4 @@ An extensible, customizable, hookable multi gui class library for AutoHotKey v1.
 ###### Very simple demonstration of hooking gui controls and getting gui control values.
 =======
 ### Other GUI Examples:
-######S ee "Arma 3 Macro Tools for GTA" repo
+###### See "Arma 3 Macro Tools for GTA" repo
