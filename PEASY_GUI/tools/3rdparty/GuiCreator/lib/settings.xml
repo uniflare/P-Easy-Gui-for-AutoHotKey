@@ -18,11 +18,11 @@
 			<key desc="Edit Labels" value="F1"></key></hotkey>
 	</actions>
 	<window>
-		<position win="44">x88 y945 w377 h22</position>
-		<position win="2">x13 y591 w320 h666</position>
-		<position win="1">x950 y348 w430 h301</position>
+		<position win="44">x731 y898 w377 h22</position>
+		<position win="2">x656 y544 w320 h666</position>
+		<position win="1">x950 y348 w390 h111</position>
 	</window>
-	<last file="E:\dev\git\sf\PEASY_GUI\PEASY_GUI\tools\guis\DevGui.xml"></last>
+	<last file="E:\dev\git\sf\P-Easy-Gui-for-AutoHotKey\PEASY_GUI\tools\guis\Example1.xml"></last>
 	<options>
 		<Snap_To_Grid>1</Snap_To_Grid>
 		<Grid>0</Grid>

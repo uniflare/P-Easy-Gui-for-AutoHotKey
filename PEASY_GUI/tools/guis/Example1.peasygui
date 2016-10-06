@@ -1,0 +1,59 @@
+﻿#Include %A_ScriptDir%\..\PEASY_GUI
+#Include base\PEASY_GUI_Base.ahk
+#Include ctypes\PEASY_GUI_CEDIT.ahk
+#Include ctypes\PEASY_GUI_CDROPDOWN.ahk
+#Include ctypes\PEASY_GUI_CBUTTON.ahk
+#Include ctypes\PEASY_GUI_CCHECKBOX.ahk
+#Include ctypes\PEASY_GUI_CLABEL.ahk
+#Include ctypes\PEASY_GUI_CGROUP.ahk
+#Include ctypes\PEASY_GUI_CPROGRESS.ahk
+#Include %A_ScriptDir%
+
+Class PEASY_GUI_PEAGUIWINDOW extends PEASY_GUI_BASE {
+	__Title := "PEASY GUI Example 1"
+	__Width := 390
+	__Height := 111
+	__GuiWindowOptions := ""
+	__GuiWindowCreationOptions := ""
+
+	_ConstructWindow() {
+
+		local gui_lblTitle
+			,gui_btnClickMe
+			,gui_ddlSomeDefaultList
+			,gui_ddlSomeDefaultListOptions
+
+		; Default Values: 
+		gui_ddlSomeDefaultList := 1
+		gui_ddlSomeDefaultListOptions := "Some|Default|List"
+		gui_btnClickMe := "Click Me!"
+		gui_lblTitle := "Simple GUI Example!"
+
+
+		Gui,Font,Normal s14 c0xFF0000 1 0 0 0 ,Tahoma 
+		this.__GuiControls["lblTitle"] := new PEASY_GUI_CLabel(this.__Handle
+		, &this
+		,"lblTitle"
+		, "__GUI_OnChange_Handler"
+		, [" x20 y10 w351 h33 Center "]
+		, "Simple GUI Example!")
+		Gui,Font
+
+		this.__GuiControls["btnClickMe"] := new PEASY_GUI_CButton(this.__Handle
+		, &this
+		,"btnClickMe"
+		, "__GUI_OnChange_Handler"
+		, [" x30 y60 w93 h33"]
+		, "Click Me!")
+
+		this.__GuiControls["ddlSomeDefaultList"] := new PEASY_GUI_CDropDown(this.__Handle
+		, &this
+		,"ddlSomeDefaultList"
+		, "__GUI_OnChange_Handler"
+		, [" x180 y60 w120 AltSubmit "]
+		, gui_ddlSomeDefaultList
+		, gui_ddlSomeDefaultListOptions)
+
+
+		return
+	}}

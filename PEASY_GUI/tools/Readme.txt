@@ -7,5 +7,4 @@ All DDLs are given the altsubmit option by default
 
 Design your gui how you want with all options you want.
 Run transmute_gui.ahk
-copy the construct function to your custom gui class (auto extended from gui base)
-voila
+copy the resulting file to your ahk working directory and include it in your ahk script. now you can instantiate a new class (see inside file for name) and use it in a more OO way

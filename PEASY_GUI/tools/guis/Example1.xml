@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gui>
+	<show h="111" title="PEASY GUI Example 1" w="390" x="950" y="348">x950 y348 w390 h111</show>
+	<window>
+		<control h="33" hwnd="146935354" tab="" type="Text" value="Simple GUI Example!" w="351" x="20" y="10" bold="1" color="0xFF0000" font="Tahoma" italic="0" size="14" strikeout="0" underline="0" options="Center" v="lblTitle"></control>
+		<control h="33" hwnd="3935498" tab="" type="Button" value="Click Me!" w="93" x="30" y="60" v="btnClickMe"></control>
+		<control hwnd="3542296" tab="" type="DropDownList" value="Some|Default|List" w="120" x="180" y="60" g="1" v="ddlSomeDefaultList"></control>
+	</window>
+	<selected>
+	</selected>
+	<file>
+		<filename>Example1.xml</filename>
+		<dir>E:\dev\git\sf\P-Easy-Gui-for-AutoHotKey\PEASY_GUI\tools\guis</dir>
+	</file>
+</gui>
