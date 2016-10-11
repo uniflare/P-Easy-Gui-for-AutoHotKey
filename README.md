@@ -4,18 +4,15 @@
 ___
 ### **Short Description**
 ###### An extensible, customizable, hookable multi gui class library for AutoHotKey v1.1.2+
-#
-#
+
 ### **GUI Examples**: 
 - Example #1
   - Very simple demonstration of how to use and interact with the GUI classes.
 - Example #2
-  - N/A - TBC
-#
-#
-#
+  - N/A ... TBC
+
 >See "Arma 3 Macro Tools for GTA" repo [here](https://github.com/uniflare/Arma-3-Macro-Tools-for-GTA "A3MT for GTA") to see all of the gui features used in a practical macro tool.
-#
+
 ### **Instructions**
 To use this class library with your project, you can start with the first example as a basis. 
 Alternatively you can start by scratch described below;
