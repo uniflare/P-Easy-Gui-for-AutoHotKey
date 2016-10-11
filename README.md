@@ -33,8 +33,3 @@ A Quick rundown of the GUI Creation procedure:
 For most simple controls such as buttons or labels/text, the "Name of Control" option is the default value assigned to the control, and the "Variable to associate with this control" is self-explanatory. For some controls such as Checkboxes and Dropdownlists, the "Name of control" is the default text or choices shown, where as the default selected value is put into "Target label to trigger". An example of this can be seen in the simple example 'Example #1' in the 'source/Examples' folder
 
 To integrate your custom GUI with your project check Example #1 for the most basic integration, this method will allow you to easily change your GUI layout or add controls without changing your project at all - just overwrite the previous .peasygui transmuted file with the new one.
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> 56bbd2dc51344fa6aa3bb02d2b8b1892aafd7bf8
