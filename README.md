@@ -1,8 +1,9 @@
 # P Easy Gui for AutoHotkey
 ###### **Alpha**
 ![P*** Easy Gui Tools](http://oi65.tinypic.com/rcnj3q.jpg)
-> Credits to Chad "[maestrith](https://github.com/maestrith)" Wilson for allowing me to package his [old Gui Creator script](https://github.com/maestrith/GUI_Creator). Checkout his new GUI Tool, [AHK Studio].
-___
+> Credits to Chad "[maestrith](https://github.com/maestrith)" Wilson for allowing me to package his [old Gui Creator script](https://github.com/maestrith/GUI_Creator). 
+Checkout his new GUI Tool [AHK Studio](https://github.com/maestrith/AHK-Studio).
+
 ### **Short Description**
 ###### An extensible, customizable, hookable multi gui class library for AutoHotKey v1.1.2+
 
